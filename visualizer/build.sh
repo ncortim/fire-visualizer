@@ -4,7 +4,7 @@
 #                :1. build docker image locally and sets a new tag for "testing"
 #                :image
 #                :2. create docker image locally
-#author          :yahuarlocro
+#author          :ncortim
 #date            :2023-06-09
 #version         :0.1
 #usage           :bash build.sh

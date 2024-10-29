@@ -7,7 +7,7 @@ A web app and REST API for forest fire visualizations
 - Server with python3.11, docker compose, or docker (new version with compose included)
 - Clone the repository and change directory
 ```bash
-$ git clone https://github.com/yahuarlocro/fire-visualizer.git
+$ git clone https://github.com/ncortim/fire-visualizer.git
 
 $ cd fire-visualizer 
 ```
