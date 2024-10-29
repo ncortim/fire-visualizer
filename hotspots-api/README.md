@@ -37,3 +37,23 @@ If needed, change environment variables defined in ./hotspots/.env
 
 3. To access the REST API go to http://localhost:8000/docs
 
+
+## Deploy hotspots api using docker
+
+1. Locate to repository hotspots-api directory
+
+```bash
+# cd fire-visualizer/hotspots-api
+```
+
+2. Build docker image for hotspots-api
+
+```bash
+$ bash build.sh 
+```
+
+3. Change to dockersetup directory and execute docker command
+
+```bash
+$ docker compose up -d
+```
