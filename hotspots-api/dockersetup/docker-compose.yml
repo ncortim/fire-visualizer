@@ -20,5 +20,27 @@ services:
     networks:
       - backend
 
+  redis:
+    container_name: hotspots-redis
+    image: redis/redis-stack-server:6.2.6-v7
+    restart: always
+    ports:
+      - ${REDIS_PORT}:6379
+    networks:
+      - backend
+
+  postgis:
+    container_name: hotspots-postgis
+    image: postgis/postgis:15-3.3
+    restart: always
+    ports:
+      - ${POSTGRES_PORT}:5432
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PW}
+      - POSTGRES_DB=${POSTGRES_DB}
+    networks:
+      - backend
+
 networks: 
     backend:
